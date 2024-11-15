@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverZed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EverZed</h1>
+        <nav>
+            <a href="#Produtos">Produtos</a>
+            <a href="#Contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="filtros">
+            <h2>Filtros</h2>
+            <label for="tamanho">Tamanho</label>
+            <select id="tamanho">
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+            </select>
+
+            <label for="preco">Preço Máximo:</label>
+            <input type="number" id="preco" placeholder="Ex: 100"/>
+
+            <button id="filtrar">Filtrar</button>
+        </section>
+
+        <section id="Produtos">
+            <h2>Produtos</h2>
+            <div class="produto" data-tamanho="P" data-preço="50">
+                <img src="#roupa" alt="Roupa 1">
+                <h3>Camiseta Branca</h3>
+                <p>R$ 50</p>
+                <button>Comprar</button>
+            </div>
+            
+            <div class="produto" data-tamanho="M" data-preço="70">
+                <img src="#roupa" alt="Roupa 1">
+                <h3>Camiseta Preta</h3>
+                <p>R$ 70</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="produto" data-tamanho="P" data-preço="100">
+                <img src="#roupa" alt="Roupa 1">
+                <h3>Moletom</h3>
+                <p>R$ 100</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha loja de roupas. Todos os direitos reservados</p>
+    </footer>
+
+        <script> src="script.js"</script>
+
+</body>
+</html>
